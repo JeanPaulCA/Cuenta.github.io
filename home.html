@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Protegida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #46A2FD;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #46A2FD;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenido a la Página Protegida!</h1>
+    <button id="btn_logout">Cerrar Sesión</button>
+
+    <script>
+        // Manejar el cierre de sesión
+        document.getElementById('btn_logout').addEventListener('click', function(){
+            // Redirigir al usuario al formulario de inicio de sesión
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
